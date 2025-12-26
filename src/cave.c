@@ -87,35 +87,35 @@ struct command_data parse_flags(char *argv[], int argc)
                 p++;
                 switch (*p)
                 {
-                    case 'v':
-                        data.verbose = true;
-                        break;
-                    case 'o':
-                        if (*(p + 1) == '\0' && (i + 1) < argc)
-                        {
-                            data.output.str = argv[i + 1];
-                            data.output.state = PRESENT;
-                            i++;
-                        }
-                        else if (*(p + 1) != '\0')
-                        {
-                            data.output.str = p + 1;
-                            data.output.state = PRESENT;
-                        }
-                        break;
-                    case 'i':
-                        if (*(p + 1) == '\0' && (i + 1) < argc)
-                        {
-                            data.input_path = argv[i + 1];
-                            i++;
-                        }
-                        else if (*(p + 1) != '\0')
-                        {
-                            data.input_path = p + 1;
-                        }
-                        break;
-                    default:
-                        break;
+                case 'v':
+                    data.verbose = true;
+                    break;
+                case 'o':
+                    if (*(p + 1) == '\0' && (i + 1) < argc)
+                    {
+                        data.output.str = argv[i + 1];
+                        data.output.state = PRESENT;
+                        i++;
+                    }
+                    else if (*(p + 1) != '\0')
+                    {
+                        data.output.str = p + 1;
+                        data.output.state = PRESENT;
+                    }
+                    break;
+                case 'i':
+                    if (*(p + 1) == '\0' && (i + 1) < argc)
+                    {
+                        data.input_path = argv[i + 1];
+                        i++;
+                    }
+                    else if (*(p + 1) != '\0')
+                    {
+                        data.input_path = p + 1;
+                    }
+                    break;
+                default:
+                    break;
                 }
             }
         }
