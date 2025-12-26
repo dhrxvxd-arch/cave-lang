@@ -35,8 +35,8 @@ cmake -S . -B build/
 ### Usage
 - Basic usage:
 ```bash
-cave main.cav -o main
-./main
+cave -i main.cav
+./a.out
 ```
 - Advanced usage:
 ```bash
