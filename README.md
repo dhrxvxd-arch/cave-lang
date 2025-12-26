@@ -41,6 +41,7 @@ cave main.cav -o main
 - Advanced usage:
 ```bash
 cave -i main.cav -o main -v
+./main
 ```
 #
 ### Source Structure
