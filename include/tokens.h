@@ -146,6 +146,11 @@ struct token_literal
     const char *str;
 };
 
+struct token_identifier
+{
+    const char *str;
+};
+
 struct token_data
 {
     union
@@ -153,12 +158,14 @@ struct token_data
         struct token_keyword keyword;
         struct token_separator separator;
         struct token_literal literal;
+        struct token_identifier identifier;
     };
     enum token_type
     {
         TOKEN_KEYWORD,
         TOKEN_SEPARATOR,
-        TOKEN_LITERAL
+        TOKEN_LITERAL,
+        TOKEN_IDENTIFIER,
     } type;
 };
 
