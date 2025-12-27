@@ -68,6 +68,10 @@ cave -i main.cav -o main -v
     └── tokens.c
 ```
 #
+### Links
+- [Sources](https://github.com/dhrxvxd-arch/cave-lang/blob/devel/refr/sources.md)
+- [C Grammar](https://github.com/dhrxvxd-arch/cave-lang/blob/devel/docs/c_grammar.md)
+#
 ### Licence
 <h4>This project is licenced under MIT Licence</h4>
 
