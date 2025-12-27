@@ -4,7 +4,7 @@
 
 void init_token_array(struct token_array *array)
 {
-    array->tokens = malloc(sizeof(struct token_data) * 1);
+    array->tokens = malloc(sizeof(struct token_data));
     array->size = 0;
     array->capacity = 1;
 }
