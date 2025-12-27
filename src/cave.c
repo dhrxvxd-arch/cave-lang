@@ -4,6 +4,9 @@
 #include <stdbool.h>
 #include <linux/limits.h>
 
+#include "../include/tokens.h"
+#include "../include/lexer.h"
+
 struct str_optional
 {
     union
@@ -134,5 +137,10 @@ int main(int argc, char *argv[])
     readbuf(data.input_path, &buffer, &size);
 
     free(buffer);
+
+    struct token_array tokens = {0};
+    tokenize(buffer, &tokens);
+    free_token_array(&tokens);
+
     return EXIT_SUCCESS;
 }
