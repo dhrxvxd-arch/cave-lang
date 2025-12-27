@@ -79,7 +79,7 @@ int main(int argc, char** argv)
 ```
 #
 ### Source Structure
-```text
+```sh
 .
 ├── build
 ├── docs
