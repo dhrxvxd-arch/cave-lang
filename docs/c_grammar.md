@@ -181,7 +181,7 @@ conditional-expression ::= logical-or-expression
 
 #
 
-### 2.8 Operator Precedence (High → Low)
+### 2.8 Operator Precedence (High →  Low)
 
 1. Postfix (`() [] . -> ++ --`)
 2. Unary (`+ - ! ~ ++ -- sizeof _Alignof`)
